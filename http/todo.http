@@ -1,0 +1,40 @@
+GET http://localhost:4000/todos HTTP/1.1
+
+###
+
+GET  http://localhost:4000/todos/60e0c77396ea82b4bd5864f4 HTTP/1.1
+
+###
+
+POST http://localhost:4000/todos HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample big b",
+    "description": "easy",
+     "category":  {
+        "_id": "60d387a3809dda9d75cf5928",
+        "title": "kitchen",
+        "createdAt": "2021-06-23T19:12:35.681Z",
+        "updatedAt": "2021-06-23T19:12:35.681Z",
+        "__v": 0
+      }
+   
+
+
+}
+
+###
+
+PUT  http://localhost:4000/todos/60e0c77396ea82b4bd5864f4 HTTP/1.1
+content-type: application/json
+
+{
+  "done": "yes"
+   
+
+
+}
+###
+
+DELETE http://localhost:4000/todos/60d3881a809dda9d75cf592b HTTP/1.1

@@ -1,0 +1,29 @@
+GET http://localhost:4000/categories HTTP/1.1
+
+###
+GET http://localhost:4000/categories/60d387d0809dda9d75cf592a HTTP/1.1
+
+###
+POST http://localhost:4000/categories HTTP/1.1
+content-type: application/json
+
+{
+    "title": "bed room"
+   
+}
+
+###
+PUT http://localhost:4000/categories/60d387d0809dda9d75cf592a HTTP/1.1
+content-type: application/json
+
+{
+    "title": "kitchen items"
+   
+
+
+}
+
+###
+DELETE  http://localhost:4000/categories/60d387a3809dda9d75cf5928 HTTP/1.1
+
+###
